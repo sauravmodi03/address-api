@@ -41,6 +41,6 @@ public class AddressServiceImpl implements AddressService{
 
     @Override
     public Page<Address> getListAddress(String value, Pageable pageable) {
-        return addressRepository.getAddressesByFullStreetAbrContainingIgnoreCaseOrFullStreetAbrContainsIgnoreCase(value,value,  pageable);
+        return addressRepository.getAddressesByFullStreetAbrContainingIgnoreCaseOrFullStreetAbrContainsIgnoreCase(value.trim(),value.trim(),  pageable);
     }
 }
