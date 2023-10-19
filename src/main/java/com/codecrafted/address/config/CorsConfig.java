@@ -14,6 +14,7 @@ public class CorsConfig {
                 CorsConfiguration config = new CorsConfiguration();
                 config.addAllowedHeader("*");
                 config.addAllowedMethod("*");
+                config.addAllowedOrigin("https://address-finder.codecrafted.in");
                 config.addAllowedOrigin("http://localhost:4200");
                 config.setAllowCredentials(true);
                 return config;

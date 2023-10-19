@@ -45,4 +45,9 @@ public class AddressController {
         return new ResponseEntity<>(addressService.findById(id), HttpStatus.OK);
     }
 
+    @GetMapping("/error")
+    public String errorOccurred() {
+        return "Error Occurred";
+    }
+
 }

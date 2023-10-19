@@ -11,8 +11,6 @@ import java.util.Optional;
 @Component
 public interface AddressService {
 
-    List<Address> findAddress(String value);
-
     List<Address> loadAll();
 
     Optional<Address> findById(String id);
